@@ -19,8 +19,6 @@ namespace RaceGame
         Player player = new Player();
         Menu menu = new Menu();
 
-        int delay = 0;
-
         List<int> enenemiesColors = new List<int>();
 
         List<Enemy> enemies = new List<Enemy>
@@ -137,17 +135,12 @@ namespace RaceGame
 
                     for (int i = 0; i < enemies.Count; i++)
                     {
-                        if (enemies[i].delay < delay)
-                        {
-                            enemies[i].DrawEnenemy(enenemiesColors[i]);
-                            enemies[i].CheckEnd(score);
-                        }
+                        enemies[i].DrawEnenemy(enenemiesColors[i]);
+                        enemies[i].CheckEnd(score);
                     }
 
                     player.CheckFinish(enemies);
                     score.DrawScore(scoreId);
-
-                    delay++;
 
                     if (player.gameFinish == true)
                     {
@@ -163,10 +156,7 @@ namespace RaceGame
 
                     for (int i = 0; i < enemies.Count; i++)
                     {
-                        if (enemies[i].delay < delay)
-                        {
-                            enemies[i].DrawEnenemy(enenemiesColors[i]);
-                        }
+                        enemies[i].DrawEnenemy(enenemiesColors[i]);
                     }
 
                     player.DrawPlayer(playerId);
@@ -202,8 +192,6 @@ namespace RaceGame
                     160
                     ),
             };
-
-            delay = 0;
 
             player = new Player();
 

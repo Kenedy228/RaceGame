@@ -19,7 +19,7 @@ namespace RaceGame
 
         private float speed = 0.006f;
 
-        public int delay;
+        public int delay, currentDelay = 0;
 
         private bool end = false;
 
@@ -31,20 +31,26 @@ namespace RaceGame
 
         public void DrawEnenemy(int textureId)
         {
-            base.Bind(textureId);
+            if (currentDelay > delay)
+            {
+                base.Bind(textureId);
 
-            base.Draw(
-                texCoordinates,
-                new float[,]
-                {
+                base.Draw(
+                    texCoordinates,
+                    new float[,]
+                    {
                     {xCoordinates[0], xCoordinates[1], xCoordinates[2], xCoordinates[3] },
                     {yCoordinates[0], yCoordinates[1], yCoordinates[2], yCoordinates[3] }
-                }
-            );
+                    }
+                );
 
-            if (canMove)
+                if (canMove)
+                {
+                    Move();
+                }
+            } else
             {
-                Move();
+                currentDelay++;
             }
         }
         
@@ -75,6 +81,7 @@ namespace RaceGame
             if (end)
             {
                 GenerateCar();
+                currentDelay = 0;
                 yCoordinates = new float[] { 1f, 1f, 1.35f, 1.35f };
                 end = false;
                 score.IncrementCounter();

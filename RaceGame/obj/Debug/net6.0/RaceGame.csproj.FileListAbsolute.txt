@@ -37,9 +37,9 @@ C:\Users\Zhura\OneDrive\Рабочий стол\race\RaceGame\RaceGame\bin\Debug
 C:\Users\Zhura\OneDrive\Рабочий стол\race\RaceGame\RaceGame\bin\Debug\net6.0\Textures\car02.png
 C:\Users\Zhura\OneDrive\Рабочий стол\race\RaceGame\RaceGame\bin\Debug\net6.0\Textures\car03.png
 C:\Users\Zhura\OneDrive\Рабочий стол\race\RaceGame\RaceGame\bin\Debug\net6.0\Textures\car04.png
-C:\Users\Zhura\OneDrive\Рабочий стол\race\RaceGame\RaceGame\bin\Debug\net6.0\Textures\car05.png
 C:\Users\Zhura\OneDrive\Рабочий стол\race\RaceGame\RaceGame\bin\Debug\net6.0\Textures\exitButton.png
 C:\Users\Zhura\OneDrive\Рабочий стол\race\RaceGame\RaceGame\bin\Debug\net6.0\Textures\menuButton.png
 C:\Users\Zhura\OneDrive\Рабочий стол\race\RaceGame\RaceGame\bin\Debug\net6.0\Textures\restartButton.png
 C:\Users\Zhura\OneDrive\Рабочий стол\race\RaceGame\RaceGame\bin\Debug\net6.0\Textures\startButton.png
 C:\Users\Zhura\OneDrive\Рабочий стол\race\RaceGame\RaceGame\bin\Debug\net6.0\Textures\numbers.png
+C:\Users\Zhura\OneDrive\Рабочий стол\race\RaceGame\RaceGame\obj\Debug\net6.0\RaceGame.sourcelink.json
